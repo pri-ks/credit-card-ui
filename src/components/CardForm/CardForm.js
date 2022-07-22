@@ -41,7 +41,7 @@ class CardForm extends Component {
                     elementType:'input',
                     elementConfig:{
                         type:'text',
-                        maxLength:'100',
+                        pattern:'[A-Za-z]{3,100}',
                         required:true
                     },
                     label:'Card Holder Name',

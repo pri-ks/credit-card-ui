@@ -1,0 +1,228 @@
+.container{
+  margin:0 auto;
+  word-wrap: break-word;
+}
+.cardFormWrap{
+  margin: 170px auto 0;
+  background-color: #fff;
+  border-radius: 10px;
+  width:400px;
+  padding: 140px 30px 30px;
+  color: #222;
+  position: relative
+}
+.inputWrap{
+margin-bottom: 20px;
+}
+.inputWrap:nth-child(n+3){
+  display: inline-block;
+  width:30%
+}
+.inputWrap:nth-last-child(2){
+  margin: 0 7% 0 3%
+}
+.inputElement{
+  outline: none;
+  border: 1px solid #ccc;
+  background-color:#fff;
+  border-radius: 5px;
+  font: inherit;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.inputElement:focus{
+  border-color: #66afe9;
+  outline: 0;
+}
+.inputLabel{
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+.submitBtn{
+    font-family: 'Roboto';
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5a1989;
+    padding:11px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.submitBtn:hover {
+  background-color: #795394;
+}
+
+/* Card CSS */
+.cardBg{
+  transition: all 1s linear;
+  width: 360px;
+  height: 242px;
+  background: url('../src/assets/images/bankcard.png') no-repeat left center;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: absolute;
+  left: 50px;
+  top: -121px;
+  padding: 20px;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.cardNumber{
+  color: #fff;
+  font-size: 20px;
+  margin: 32px auto;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+}
+.cardDetail{
+  display: flex;
+  justify-content: space-between;
+  word-break: break-word;
+}
+.cardHolder{
+  padding: 5px 10px;
+  width: calc(100% - 95px);
+}
+.cardExpiry{
+  min-width: 55px;
+  padding:5px 10px;
+  margin-left: 5px;
+}
+.title{
+  color: #bbb;
+  font-size: 12px;
+  margin:0;
+  font-family: monospace;
+  font-weight: 700;
+}
+.detailText{
+  color: #fff;
+  margin:5px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.borderWhite{
+  border:1px solid #fff;
+  border-radius: 5px;
+}
+.cardLogo{
+  align-self: flex-end;
+  width: 100px;
+  height: 70px;
+}
+.cardLogo1{
+  background: url('../src/assets/images/visalogo.png') no-repeat right center;
+  background-size: contain;
+}
+.cardLogo2{
+  background: url('../src/assets/images/mastercardlogo.png') no-repeat right center;
+  background-size: contain;
+}
+.cardLogo3{
+  background: url('../src/assets/images/americanexpresslogo.png') no-repeat right center;
+  background-size: contain;
+}
+.cardLogo4{
+  background: url('../src/assets/images/discoverlogo.png') no-repeat right center;
+  background-size: contain;
+}
+.card-side {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left:0;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
+}
+.cardFront {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/*- Back side -*/
+.cardBack {
+  z-index: 2;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 0
+}
+.cardBgBack {
+  background: url('../src/assets/images/bankcardback.jpg') no-repeat center;
+  transform: rotateY(180deg);
+}
+.cardFrontActive {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in, visibility .75s linear;
+}
+.blackBg{
+  background-color:rgba(0,0,0,.9);
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.cvvWrap{
+  text-align: right;
+  color: #fff;
+  font-size:12px;
+  padding:0 20px
+}
+.cvvNum{
+  background-color: #fff;
+  padding:10px;
+  height: 20px;
+  border-radius: 5px;
+  color: #222;
+  margin-top: 3px;
+  line-height: 20px
+}
+.margin20{
+  margin:15px 20px 0
+}
+.msgBox{
+  width: 50%;
+  margin: 100px auto;
+  border: 1px solid #92d8a1;
+  background-color: #d5ecda;
+  border-radius: 10px;
+  color: #346c41;
+  padding: 55px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardFormWrap{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 140px 15px 30px;
+  }
+  .cardBg{
+    width: 80%;
+    left:10%
+  }
+}

@@ -23,15 +23,13 @@ const Card=(props)=>{
                             cardArray.push('#');
                     }
             }
-        let logo=''
-        if(cardArray[0]==='5')
-            logo='cardLogo2'
-         else if(cardArray[0]==='3')
-            logo='cardLogo3'
+        let logo='cardLogoV'
+        if(cardArray[0]==='3')
+            logo='cardLogoA'
+        else if(cardArray[0]==='5')
+            logo='cardLogoM'
         else if(cardArray[0]==='6')
-            logo='cardLogo4'
-        else
-            logo='cardLogo1'
+            logo='cardLogoD'
         return(
             <div className={(focusedElement==='cardcvv') ? 'cardBg cardBgBack' :'cardBg'}>
                  <div className='card-side cardBack'>

@@ -112,8 +112,6 @@ class CardForm extends Component {
 
     formSubmit = (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
-        console.log(formData);
         this.setState({showMsg:true})
     }
     

@@ -123,19 +123,19 @@ margin-bottom: 20px;
   width: 100px;
   height: 70px;
 }
-.cardLogo1{
+.cardLogoV{
   background: url('../src/assets/images/visalogo.png') no-repeat right center;
   background-size: contain;
 }
-.cardLogo2{
+.cardLogoM{
   background: url('../src/assets/images/mastercardlogo.png') no-repeat right center;
   background-size: contain;
 }
-.cardLogo3{
+.cardLogoA{
   background: url('../src/assets/images/americanexpresslogo.png') no-repeat right center;
   background-size: contain;
 }
-.cardLogo4{
+.cardLogoD{
   background: url('../src/assets/images/discoverlogo.png') no-repeat right center;
   background-size: contain;
 }

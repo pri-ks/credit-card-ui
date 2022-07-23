@@ -32,7 +32,6 @@ class CardForm extends Component {
                         type:'tel',
                         minLength:'14',
                         maxLength:'16',
-                        placeholder: 'Enter Card Number',
                         required:true
                     },
                     label:'Card Number',
@@ -44,7 +43,6 @@ class CardForm extends Component {
                         type:'text',
                         pattern:'[A-Za-z]{3,100}',
                         title:'Name should be min 3 characters and max 100 characters long',
-                        placeholder: 'Enter Name on Card',
                         required:true
                     },
                     label:'Card Holder Name',
